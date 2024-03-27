@@ -1,27 +1,140 @@
+/* General styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    }
+    background-color: #f4f4f4;
+}
+
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-.products {
-    display: inline-block;
-    justify-content: center;
-}
-.product {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    text-align: center;
-}
-.cart {
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid #ccc;
-}
     
+    color: white;
+    
+    
+    
+    
+}
+header .navbar {
+    background-color: #333;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 0;
+    z-index: 1000; /* Ensures the navbar stays on top of other elements */
+}
+.special-offer{
+    background-color: #79d3bf;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Product container */
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 150px; /* Adjusted to create more space between the navbar and the products */
+}
+.products1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    padding-top: 10px; /* Adjusted to create more space between the navbar and the products */
+}
+
+/* Individual product */
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    width: 200px; /* Adjust width as needed */
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.product h2 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.product button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Cart section */
+.cart {
+    background-color: #d3d3d3; /* A slightly lighter shade of gray to complement the website */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    padding-top: 5px;
+    width: 200px; /* Adjust width as needed */
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000; /* Ensures the cart stays on top of other elements */
+    margin-top: 1px; /* Adjusted to account for the fixed navbar */
+}
+
+.cart h2 {
+    margin-bottom: 10px;
+}
+
+.cart ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cart li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart li:last-child {
+    border-bottom: none;
+}
+
+.cart button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.bottom_navbar {
+    background-color: #d3d3d3; /* A slightly lighter shade of gray to complement the website */
+    color: white;
+    padding: 10px 0;
+    text-align: center; /* Center the text */
+    display: flex; /* Use flexbox for layout */
+    justify-content: center; /* Center the contents horizontally */
+    align-items: center; /* Center the contents vertically */
+    flex-direction: column; /* Stack the contents vertically */
+}
+
